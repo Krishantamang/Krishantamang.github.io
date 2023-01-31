@@ -1,5 +1,19 @@
+:root{
+    --font:
+
+
+
+}
+
+
 .nav{
-    display: grid;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px;
-    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    display: inline-block;
+    justify-self: center;
+    font-size: 30px;
+    /* grid-template-rows: (6,150px);
+    grid-template-columns: 150px;
+    grid-column-gap: 10px; */
+}
+.nav a{
+    margin: 0 40px;
 }
