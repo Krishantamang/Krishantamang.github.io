@@ -29,34 +29,30 @@ body{
 }
 
 .main_nav{
-    /* display: inline-block; */
-    justify-self: center;
     font-size: 30px;
-    padding-top: 10px; 
+    padding-top: 15px; 
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.logo{
-    cursor: pointer;
-}
 
 .main_nav .list{
-    padding-left: 10px;
-    /* display: inline-block; */
-    display: grid;
-    /* grid-template-rows: (6,150px);
-    grid-template-columns: 150px;
-    grid-column-gap: 10px;  */
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .text{
-    padding-top: 100px;
-    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 150px;
 }
+
 
 .text .name{
-    font-size: 55px;
+    font-size: 80px;
 }
 
-img{
-    background-attachment: fixed;
+.text .describe{
+    padding-left: 10px;
+    font-size: 30px;
 }
