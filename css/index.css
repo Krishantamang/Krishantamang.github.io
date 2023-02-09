@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap); 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *{
     margin: 0;
@@ -7,6 +8,7 @@
     list-style: none;
     text-decoration: none;
     color: black;
+    /* overflow: hidden; */
 }
 
 
@@ -20,11 +22,12 @@
 /* --------------------home----------------- */
 
 body{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-image:url(../img/me.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -35,6 +38,61 @@ body{
     padding-right: 50px;
 }
 
+.main_nav .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+.main_nav .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.main_nav .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.main_nav .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.main_nav .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+.main_nav .list {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.main_nav .list li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
 .main_nav .list{
     display: flex;
@@ -47,8 +105,15 @@ body{
     padding-top: 150px;
 }
 
+.contact{
+    bottom:0px;width:100%;
+}
 
 .text .name{
+    font-size: 80px;
+}
+
+.text .caste{
     font-size: 80px;
 }
 
@@ -56,3 +121,113 @@ body{
     padding-left: 10px;
     font-size: 30px;
 }
+
+
+@media only screen and (max-width:1000px) {
+    .main_nav{
+        font-size: 17px;
+        padding-top: 15px; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text{
+        padding-top:100px ;
+    }
+
+    .text .name{
+        font-size: 50px;
+    }
+
+    .text .caste{
+        font-size: 50px;
+    }
+
+    .text .describe{
+        font-size: 20px;
+    }
+}
+
+/* @media only screen and (max-width:1000px) {
+    .main_nav{
+        font-size: 17px;
+        padding-top: 15px; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text{
+        padding-top:100px ;
+    }
+
+    .text .name{
+        font-size: 50px;
+    }
+
+    .text .describe{
+        font-size: 20px;
+    }
+} */
+
+@media only screen and (max-width:580px) {
+    body{
+        background-image :url(../img/memobile.jpg)
+    }
+    .main_nav{
+        font-size: 15px;
+        padding-top: 15px; 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .text{
+        padding-top:50px ;
+    }
+
+    .text .name{
+        font-size: 30px;
+    }
+
+    .text .caste{
+        font-size: 30px;
+    }
+
+    .text .describe{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:500px) {
+    body{
+        background-image :url(../img/memobile.jpg)
+    }
+    .main_nav{
+        
+        font-size: 15px;
+        padding-top: 15px; 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .text{
+        padding-top:50px ;
+    }
+
+    .text .name{
+        font-size: 30px;
+    }
+
+    .text .caste{
+        font-size: 30px;
+        line-break: normal;
+    }
+
+    .text .describe{
+        font-size: 10px;
+    }
+}
+
