@@ -48,3 +48,7 @@ body{
     text-align : center;
     
 }
+
+.copyright{
+    position:fixed;bottom:0px;width:100%;
+}

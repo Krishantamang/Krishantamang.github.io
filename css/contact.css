@@ -6,6 +6,7 @@
     font-family: 'Montserrat',sans-serif;
     list-style: none;
     text-decoration: none;
+    color:black;
     overflow: hidden;
 }
 
@@ -37,23 +38,61 @@ body{
 
 
 .main_nav .list{
-    color: white;
     display: flex;
     justify-content: space-between;
 }
 
-.main .main_nav .list .nav{
-    color: white;
-}
-
-
 .main .text{
-    color: black;
-    font-size: 20px;
-    padding-top: 160px;
-    padding-left: 340px;
+    padding-top: 110px;
+    padding-left: 20px;
+    font-size: 30px;
 }
 
-.fa-brands fa-square-facebook fa-2x{
-    padding-top: 20px;
+#contact{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-title h1{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+}
+form{
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+input[type=text], select, textarea{
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 15px 6px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+input[type=email]{
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 15px 6px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.copyright{
+    position:fixed;bottom:0px;width:100%;
 }

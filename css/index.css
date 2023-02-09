@@ -22,7 +22,7 @@
 /* --------------------home----------------- */
 
 body{
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-image:url(../img/me.jpg);
     background-size: cover;
@@ -105,8 +105,10 @@ body{
     padding-top: 150px;
 }
 
-.contact{
-    bottom:0px;width:100%;
+.copyright{
+    position:fixed;
+    bottom:0px;
+    width:100%;
 }
 
 .text .name{
@@ -123,7 +125,7 @@ body{
 }
 
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1280px) {
     .main_nav{
         font-size: 17px;
         padding-top: 15px; 
@@ -169,7 +171,7 @@ body{
     }
 } */
 
-@media only screen and (max-width:580px) {
+@media only screen and (max-width:640px) {
     body{
         background-image :url(../img/memobile.jpg)
     }
@@ -201,7 +203,7 @@ body{
 
 
 
-@media only screen and (max-width:500px) {
+/* @media only screen and (max-width:500px) {
     body{
         background-image :url(../img/memobile.jpg)
     }
@@ -229,5 +231,5 @@ body{
     .text .describe{
         font-size: 10px;
     }
-}
+} */
 
