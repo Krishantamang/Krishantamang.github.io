@@ -40,14 +40,20 @@ body{
 .main_nav .list{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 125px;
 }
 
 .main .text{
-    padding-top: 125px;
+    display: flex;
+    justify-content: center;
     font-size: 25px;
     text-align : center;
-    
+    font-weight: bold;
 }
+
+/* .main .text p{
+    background-color: aliceblue;
+} */
 
 .copyright{
     position:fixed;bottom:0px;width:100%;
