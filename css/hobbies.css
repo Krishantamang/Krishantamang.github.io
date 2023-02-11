@@ -195,7 +195,11 @@ nav #icon{
 
     .vmove{padding: 4vw;}
     .vmove span{font-size: 25px;}
-    .main .hobbies{padding-top: 20px;grid-row-gap: 20px;grid-template-columns: 50vw ;grid-template-rows: 40vw 40vw;}
+    .main .hobbies{padding-top: 40px;}
+}
+
+@media (max-width:540px){
+    .main .hobbies{padding-top: 20px;grid-row-gap: 30px;grid-template-columns: 80vw ;grid-template-rows: 40vw 40vw;}
     .main .hobbies .text{padding-top: 0px;}
     .main .hobbies .description{padding-top: 0px;}
 }
