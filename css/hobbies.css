@@ -199,6 +199,10 @@ nav #icon{
 }
 
 @media (max-width:540px){
+    .vwrap, #code, #music, #play, #gym, #art{
+        width: 80vw;
+        height: 50vh;
+    }
     .main .hobbies{padding-top: 20px;grid-row-gap: 30px;grid-template-columns: 80vw ;grid-template-rows: 40vw 40vw;}
     .main .hobbies .text{padding-top: 0px;}
     .main .hobbies .description{padding-top: 0px;}
