@@ -68,20 +68,75 @@ nav #icon{
     height: 45px;
 }
 
-.main .text{
+.main .hobbies{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-column-gap:5vw ;
     padding-top: 110px;
+}
+
+.main .hobbies .text{
     padding-left: 20px;
     font-size: 2.5vw;
     font-weight: bold;
+}
+
+.vwrap, #code, #music, #play, #gym, #art{
+    width: 40vw;
+    height: 50vh;
+}
+
+.vwrap{
+    /* overflow: hidden; */
+    border-radius: 25px;
+    background-color: #2f3640;
+}
+
+.vmove{
+    padding-top: 2vw;
+    padding-left: 4vw;
+    position: relative;
+    bottom: 0%;
+}
+
+@keyframes slidev {
+    0% { bottom: 0%;}
+    30% { bottom: 0%;}
+    33% { bottom: 100%;}
+    63% { bottom: 100%;}
+    66% { bottom: 200%;}
+    97% { bottom: 200%;}
+    100% { bottom: 0%;}
+}
+
+.vmove{animation: slidev linear 10s infinite;}
+.vmove:hover{ animation-play-state: paused;}
+
+.vmove span{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-decoration: underline;
+    color: grey;
+}
+
+.vmove .p{
+    font-size: 2.2vw;
 }
 
 .copyright{
     position:fixed;bottom:0px;width:100%;
 }
 
+.main .text a.active,a:hover{
+    border: none;
+    color: #3498db;
+}
+
 @media only screen and (max-width:800px) {
-    .main .text{padding-top:80px ;}
-    .main .text{font-size: 23px;}
+    .hobbies{font-size: 18px}
+    .hobbies a, span{
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 1048px){
@@ -131,6 +186,10 @@ nav #icon{
     nav ul.show{
         left: 0;
     }
+
+    .vmove{padding: 4vw;}
+    .vmove span{font-size: 25px;}
+    .main .hobbies{padding-top: 80px;}
 }
 
 @media (max-width:360px){
