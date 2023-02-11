@@ -152,3 +152,9 @@ nav #icon{
 
     }
 }
+
+@media (max-width:500px){
+    .main .text{
+        font-size: 5vw;
+    }    
+}
